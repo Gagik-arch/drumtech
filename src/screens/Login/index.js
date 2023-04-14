@@ -10,19 +10,19 @@ export const Login = ({ navigation }) => {
   return (<Screen contentContainerStyle={s.container}>
     <View style={s.top}>
       <Image source={logo} />
-      <Text size={"24_600"} style={{...margin(24,0)}}>Welcome to drumtech</Text>
-      <View style={s.divider}/>
-      <Text size={"20_500"} style={{...margin(32,0)}} >Sign in</Text>
+      <Text size={"24_600"} style={{ ...margin(24, 0) }}>Welcome to drumtech</Text>
+      <View style={s.divider} />
+      <Text size={"20_500"} style={{ ...margin(32, 0) }}>Sign in</Text>
     </View>
 
     <Input placeholder={"Email"} validationKey={"email"} />
-    <Input placeholder={"Password"} validationKey={"password"} secureTextEntry={true} containerStyles={s.input}/>
+    <Input placeholder={"Password"} validationKey={"password"} secureTextEntry={true} containerStyles={s.input} />
 
     <Button label={"Forgot password ?"} textSize={"14_400"} />
     <Button variant={"primary"} label={"Sign in"} style={s.submit_btn}
-    onPress={()=>{
-      navigation.navigate('ForgotPassword')
-    }}/>
+            onPress={() => {
+              navigation.navigate("TabsNavigator");
+            }} />
 
     <View style={s.footer_container}>
       <Text> Don’t have an account ?</Text>

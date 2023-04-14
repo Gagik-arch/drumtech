@@ -14,14 +14,11 @@ export const TabBar = ({ state, descriptors, navigation }) => {
                 let icon = ''
                 let type = 'Normal'
                 switch (route.name) {
-                    case 'Package':
-                        icon = 'Package'
+                    case 'Music':
+                        icon = 'Music'
                         break
-                    case 'History':
-                        icon = 'History'
-                        break
-                    case 'Statistics':
-                        icon = 'Chart'
+                    case 'MyScores':
+                        icon = 'Score'
                         break
                     case 'Settings':
                         icon = 'Settings'
@@ -29,7 +26,6 @@ export const TabBar = ({ state, descriptors, navigation }) => {
                     default:
                         break
                 }
-
 
                 const onPress = () => {
                     const event = navigation.emit({

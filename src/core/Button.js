@@ -81,7 +81,6 @@ const Button = ({
 
 const s = StyleSheet.create({
   container: {
-    borderRadius: 6,
     alignItems: "center",
     overflow: "hidden",
     flexDirection: "row",
@@ -89,7 +88,7 @@ const s = StyleSheet.create({
     position: "relative",
     borderWidth: 1,
     boxSizing: "border-box",
-    ...padding(14, 83),
+    ...padding(10, 26),
   },
   container_: {
     ...padding(0),
@@ -100,7 +99,7 @@ const s = StyleSheet.create({
     backgroundColor: Colors.blue,
     borderColor: Colors.blue,
     fontWeight: 600,
-    borderRadius:4,
+    borderRadius:4
   },
   container_primary_disabled: {
     backgroundColor: Colors.gray,
@@ -109,6 +108,7 @@ const s = StyleSheet.create({
   container_secondary: {
     backgroundColor: "white",
     borderColor: Colors.blue,
+    borderRadius:4
   },
   container_secondary_disabled: {
     backgroundColor: "white",

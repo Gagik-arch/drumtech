@@ -6,7 +6,7 @@ const Text = ({children = '', style = {}, size = 'normal12', ...props}) => {
   size = size.toLowerCase();
 
   return (
-    <RN.Text style={[fonts[size], {color: 'black'}, style]} {...props}>
+    <RN.Text style={[fonts[size], {color: '#191212'}, style]} {...props}>
       {children}
     </RN.Text>
   );

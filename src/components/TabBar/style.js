@@ -5,9 +5,8 @@ const s = StyleSheet.create({
     container: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        backgroundColor: 'white',
-        borderWidth:1,
-        borderColor:'#CCCCCC',
+        backgroundColor: Colors.blue,
+        borderWidth:0,
     },
 })
 

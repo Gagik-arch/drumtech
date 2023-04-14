@@ -105,10 +105,7 @@ const Input = React.forwardRef(
     const onTextChange = text => {
       if (keyboardType === "numeric") {
         const numText = text.toLowerCase().replace(/[^0-9]/g, "");
-        if (validationKey !== "phone") {
-          text = numText;
-        }
-        text = `1 (${numText.slice(1, 4)}) ${numText.slice(4)}`;
+        text = validationKey === "phone" ? `1 (${numText.slice(1, 4)}) ${numText.slice(4)}` : numText;
       }
 
       setDefaultValue(text);

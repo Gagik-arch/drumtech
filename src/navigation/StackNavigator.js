@@ -1,12 +1,11 @@
 import {
-  Login,
-  OTPverification,
-  Registration,
-  Payment, Profile, CurrentPackage, ForgotPassword,
+  Login, OTPverification, Registration,
+  Payment, Profile, CurrentPackage, ForgotPassword, ResetPassword,
 } from "../screens";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { useNavigation } from "@react-navigation/native";
-import {TabsNavigator} from '../navigation'
+import { TabsNavigator } from "../navigation";
+
 const Stack = createNativeStackNavigator();
 
 const StackNavigator = () => {
@@ -30,9 +29,14 @@ const StackNavigator = () => {
   return (
     <Stack.Navigator>
       <Stack.Group>
+        {/*<Stack.Screen*/}
+        {/*  name={"Login"}*/}
+        {/*  component={Login}*/}
+        {/*  options={{ header: () => null }}*/}
+        {/*/>*/}
         <Stack.Screen
-          name={"Login"}
-          component={Login}
+          name={"OTPverification"}
+          component={OTPverification}
           options={{ header: () => null }}
         />
         <Stack.Screen
@@ -41,8 +45,8 @@ const StackNavigator = () => {
           options={{ header: () => null }}
         />
         <Stack.Screen
-          name={"OTPverification"}
-          component={OTPverification}
+          name={"ResetPassword"}
+          component={ResetPassword}
           options={{ header: () => null }}
         />
         <Stack.Screen

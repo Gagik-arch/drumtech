@@ -45,7 +45,7 @@ const campaignData = [
 const paymentData = [
   {
     date: "Date",
-    package: "Package",
+    package: "Music",
     value: "400 USD",
   },
   {

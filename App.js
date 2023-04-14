@@ -24,7 +24,7 @@ export default () => {
 
   return (
     <SafeAreaProvider>
-      <StatusBar backgroundColor={Colors.blue} barStyle="light-content" />
+      <StatusBar backgroundColor={'white'} barStyle="light-content" />
 
       {/*<BottomSheetModalProvider>*/}
         <NavigationContainer theme={navTheme}>

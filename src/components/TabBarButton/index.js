@@ -1,25 +1,23 @@
-import React from 'react';
-import {TouchableOpacity, View} from 'react-native';
-import {Icon, Text} from '../../core';
+import React from "react";
+import { TouchableOpacity } from "react-native";
+import { Icon, Text } from "../../core";
 import { Colors, padding } from "../../resources";
-import s from './style';
+import s from "./style";
 
 export const TabBarButton = ({
-  icon,
-  accessibilityRole,
-  accessibilityState,
-  accessibilityLabel,
-  onPress,
-  onLongPress,
-  selected,
-  label,
-}) => {
+                               icon,
+                               accessibilityRole,
+                               accessibilityState,
+                               accessibilityLabel,
+                               onPress,
+                               onLongPress,
+                               selected,
+                               label,
+                             }) => {
   return (
     <TouchableOpacity
-      style={[s.container,{
-        borderTopWidth:selected ? 2 : 0,
-        borderTopColor:Colors.yellow,
-        ...padding(6, 0)
+      style={[s.container, {
+        ...padding(6, 0 ,26,0 ),
       }]}
       accessibilityRole={accessibilityRole}
       accessibilityState={accessibilityState}
@@ -27,12 +25,10 @@ export const TabBarButton = ({
       onPress={e => onPress(e)}
       onLongPress={onLongPress}>
       <Icon
-        type={selected ? icon + 'Active':icon}
+        type={icon}
         size={28}
       />
-      <Text style={[s.label,
-        { color:selected ? Colors.blue : Colors.gray },
-      ]}>
+      <Text style={[s.label]} size={'12_400'}>
         {label.charAt(0).toUpperCase() + label.slice(1)}
       </Text>
     </TouchableOpacity>

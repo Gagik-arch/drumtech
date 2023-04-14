@@ -5,29 +5,33 @@ const s = StyleSheet.create({
   container: {
     ...padding(16),
   },
-  bg: {
+  top: {
     width: "100%",
-    height: "100%",
-    display: "flex",
     alignItems: "center",
-    justifyContent:'space-evenly'
+    justifyContent: "space-evenly",
   },
   logo: {
-    width: 245,
-    height: 86,
-    ...margin(60, 0),
+    ...margin(60, 0, 0, 0),
   },
   header: {
-    color: "white",
+    color: Colors.blue,
   },
-  resend_btn: {
-    color: Colors.yellow,
+  input: {
+    ...margin(0, 0, 12, 0),
   },
   title: {
     color: Colors.gray,
     textAlign: "center",
-    maxWidth: 190,
-    lineHeight: 17
+  },
+  btn: {
+    width: "100%",
+    ...margin(12, 0, 0, 0),
+  },
+  divider: {
+    width: 60,
+    height: 1,
+    backgroundColor: Colors.gray,
+    ...margin(24, 0, 32, 0),
   },
 });
 
