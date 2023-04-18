@@ -14,7 +14,7 @@ export const Music = (props) => {
         <Button style={s.circle}><Icon type={"User"} /></Button>
         <Text size={"18_400"}>Hello, Name Surname</Text>
       </View>
-      <View style={s.body}>--
+      <View style={s.body}>
         <Text size={"24_600"} >Select Exercise</Text>
       </View>
     </Screen>

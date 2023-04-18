@@ -9,9 +9,7 @@ const s = StyleSheet.create({
     width: "100%",
     alignItems: "center",
     justifyContent: "space-evenly",
-  },
-  logo: {
-    ...margin(60, 0, 0, 0),
+    ...margin(60, 0, 32, 0),
   },
   header: {
     color: Colors.blue,

@@ -1,6 +1,7 @@
 import {
   Login, OTPverification, Registration,
-  Payment, Profile, CurrentPackage, ForgotPassword, ResetPassword,
+  Payment, Profile, CurrentPackage, ForgotPassword, ResetPassword, MyDetails,
+  ChangePassword, DeleteAccount,
 } from "../screens";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { useNavigation } from "@react-navigation/native";
@@ -34,26 +35,26 @@ const StackNavigator = () => {
         {/*  component={Login}*/}
         {/*  options={{ header: () => null }}*/}
         {/*/>*/}
-        <Stack.Screen
-          name={"OTPverification"}
-          component={OTPverification}
-          options={{ header: () => null }}
-        />
-        <Stack.Screen
-          name={"ForgotPassword"}
-          component={ForgotPassword}
-          options={{ header: () => null }}
-        />
-        <Stack.Screen
-          name={"ResetPassword"}
-          component={ResetPassword}
-          options={{ header: () => null }}
-        />
-        <Stack.Screen
-          name={"Registration"}
-          component={Registration}
-          options={{ header: () => null }}
-        />
+        {/*<Stack.Screen*/}
+        {/*  name={"OTPverification"}*/}
+        {/*  component={OTPverification}*/}
+        {/*  options={{ header: () => null }}*/}
+        {/*/>*/}
+        {/*<Stack.Screen*/}
+        {/*  name={"ForgotPassword"}*/}
+        {/*  component={ForgotPassword}*/}
+        {/*  options={{ header: () => null }}*/}
+        {/*/>*/}
+        {/*<Stack.Screen*/}
+        {/*  name={"ResetPassword"}*/}
+        {/*  component={ResetPassword}*/}
+        {/*  options={{ header: () => null }}*/}
+        {/*/>*/}
+        {/*<Stack.Screen*/}
+        {/*  name={"Registration"}*/}
+        {/*  component={Registration}*/}
+        {/*  options={{ header: () => null }}*/}
+        {/*/>*/}
         <Stack.Screen
           name={"TabsNavigator"}
           component={TabsNavigator}
@@ -72,6 +73,16 @@ const StackNavigator = () => {
         <Stack.Screen
           name={"CurrentPackage"}
           component={CurrentPackage}
+          options={{ header: () => null }}
+        />
+        <Stack.Screen
+          name={"My Details"}
+          component={MyDetails}
+          options={{ header: () => null }}
+        />
+        <Stack.Screen
+          name={"Change Password"}
+          component={ChangePassword}
           options={{ header: () => null }}
         />
       </Stack.Group>

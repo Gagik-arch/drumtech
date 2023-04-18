@@ -10,3 +10,5 @@ export * from './Profile';
 export * from './CurrentPackage';
 export * from './ForgotPassword';
 export * from './ResetPassword';
+export * from './MyDetails';
+export * from './ChangePassword';

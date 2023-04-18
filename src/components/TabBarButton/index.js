@@ -27,6 +27,7 @@ export const TabBarButton = ({
       <Icon
         type={icon}
         size={28}
+        fill={'red'}
       />
       <Text style={[s.label]} size={'12_400'}>
         {label.charAt(0).toUpperCase() + label.slice(1)}

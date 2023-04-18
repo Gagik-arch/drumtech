@@ -25,7 +25,7 @@ export const OTPverification = ({ navigation }) => {
   return (
     <Screen contentContainerStyle={s.container}>
       <View style={s.top}>
-        <Image source={logo} style={s.logo} />
+        <Image source={logo}/>
         <Text size={"24_600"} style={s.header}>Check your email</Text>
         <View style={s.divider} />
         <Text size={"16_400"} style={s.title}>

@@ -14,6 +14,9 @@ const s = StyleSheet.create({
     justifyContent:'flex-start',
     backgroundColor:'rgba(245, 245, 245, 0.6)',
     ...padding(16)
+  },
+  input:{
+    ...margin(50,0,24,0)
   }
 });
 
