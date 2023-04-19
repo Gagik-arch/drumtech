@@ -18,7 +18,13 @@ export const ForgotPassword = ({ navigation }) => {
         </Text>
       </View>
       <Input placeholder={"Email"} validationKey={"email"} />
-      <Button variant={"primary"} label={"Next"} style={s.submit_btn} disabled={true} />
+      <Button variant={"primary"}
+              label={"Next"}
+              style={s.submit_btn}
+              onPress={() => {
+                  navigation.navigate("ResetPassword");
+              }}
+      />
     </Screen>
   );
 };

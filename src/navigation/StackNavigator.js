@@ -30,31 +30,31 @@ const StackNavigator = () => {
   return (
     <Stack.Navigator>
       <Stack.Group>
-        {/*<Stack.Screen*/}
-        {/*  name={"Login"}*/}
-        {/*  component={Login}*/}
-        {/*  options={{ header: () => null }}*/}
-        {/*/>*/}
-        {/*<Stack.Screen*/}
-        {/*  name={"OTPverification"}*/}
-        {/*  component={OTPverification}*/}
-        {/*  options={{ header: () => null }}*/}
-        {/*/>*/}
-        {/*<Stack.Screen*/}
-        {/*  name={"ForgotPassword"}*/}
-        {/*  component={ForgotPassword}*/}
-        {/*  options={{ header: () => null }}*/}
-        {/*/>*/}
-        {/*<Stack.Screen*/}
-        {/*  name={"ResetPassword"}*/}
-        {/*  component={ResetPassword}*/}
-        {/*  options={{ header: () => null }}*/}
-        {/*/>*/}
-        {/*<Stack.Screen*/}
-        {/*  name={"Registration"}*/}
-        {/*  component={Registration}*/}
-        {/*  options={{ header: () => null }}*/}
-        {/*/>*/}
+        <Stack.Screen
+          name={"Login"}
+          component={Login}
+          options={{ header: () => null }}
+        />
+        <Stack.Screen
+          name={"OTPverification"}
+          component={OTPverification}
+          options={{ header: () => null }}
+        />
+        <Stack.Screen
+          name={"ForgotPassword"}
+          component={ForgotPassword}
+          options={{ header: () => null }}
+        />
+        <Stack.Screen
+          name={"ResetPassword"}
+          component={ResetPassword}
+          options={{ header: () => null }}
+        />
+        <Stack.Screen
+          name={"Registration"}
+          component={Registration}
+          options={{ header: () => null }}
+        />
         <Stack.Screen
           name={"TabsNavigator"}
           component={TabsNavigator}

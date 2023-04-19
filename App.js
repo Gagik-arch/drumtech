@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, {useEffect} from "react";
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import {StatusBar} from 'react-native';
 import {NavigationContainer, DefaultTheme} from '@react-navigation/native';
@@ -8,31 +8,31 @@ import Toast from 'react-native-toast-message';
 // import store from './src/store';
 import {BottomSheetModalProvider} from '@gorhom/bottom-sheet';
 import {Colors} from './src/resources'
+import SplashScreen from 'react-native-splash-screen'
 
 const navTheme = {
-  ...DefaultTheme,
-  colors: {
-    ...DefaultTheme.colors,
-    background: 'white',
-  },
+    ...DefaultTheme,
+    colors: {
+        ...DefaultTheme.colors,
+        background: 'white',
+    },
 };
 export default () => {
 
-  // useEffect(()=>{
-  //   SplashScreen.hide();
-  // },[])
+    useEffect(() => {
+        SplashScreen.hide();
+    }, [])
 
-  return (
-    <SafeAreaProvider>
-      <StatusBar backgroundColor={'white'} barStyle="light-content" />
+    return (
+        <SafeAreaProvider>
+            <StatusBar backgroundColor={'white'} barStyle="light-content"/>
 
-      {/*<BottomSheetModalProvider>*/}
-        <NavigationContainer theme={navTheme}>
-          <StackNavigator />
-        </NavigationContainer>
-      {/*</BottomSheetModalProvider>*/}
-
-      <Toast />
-    </SafeAreaProvider>
-  );
+            {/*<BottomSheetModalProvider>*/}
+                <NavigationContainer theme={navTheme}>
+                    <StackNavigator/>
+                </NavigationContainer>
+            {/*</BottomSheetModalProvider>*/}
+            <Toast/>
+        </SafeAreaProvider>
+    );
 };

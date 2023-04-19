@@ -5,6 +5,10 @@ export const fonts = StyleSheet.create({
     fontSize: 24,
     fontWeight: "600",
   },
+  "20_600": {
+    fontSize: 20,
+    fontWeight: "600",
+  },
   "20_500": {
     fontSize: 20,
     fontWeight: "500",
@@ -16,6 +20,10 @@ export const fonts = StyleSheet.create({
   "17_400": {
     fontSize: 17,
     fontWeight: "400",
+  },
+  "16_500": {
+    fontSize: 16,
+    fontWeight: "500",
   },
   "16_400": {
     fontSize: 16,

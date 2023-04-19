@@ -26,8 +26,9 @@ export const ResetPassword = ({ navigation }) => {
       <Button variant={"primary"}
               label={"Sign in"}
               style={s.submit_btn}
-              disabled={true}
-
+              onPress={() => {
+                  navigation.navigate("Login");
+              }}
       />
     </Screen>
   );
