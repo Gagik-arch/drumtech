@@ -1,15 +1,12 @@
-import {useState, useRef, useCallback} from "react";
-import {ActivityIndicator, Image, View, ImageBackground} from "react-native";
-import {Button, Screen, Icon, Text, CodeInput, Input} from "../../core";
+import {useState,  useCallback} from "react";
+import { Image, View} from "react-native";
+import {Button, Screen,  Text,  Input} from "../../core";
 import logo from "../../../assets/images/logo.png";
-import bg from "../../../assets/images/bg.png";
 import s from "./style";
 import {Colors, validateFields, margin, onChangeBody} from "../../resources";
 
 export const OTPverification = ({navigation}) => {
     const [body, setBody] = useState({});
-    const [isAgree, setIsAgree] = useState(false);
-    const [isLoading, setIsLoading] = useState(false);
     const onChange = e => {
         onChangeBody(e, body, setBody);
     };

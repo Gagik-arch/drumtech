@@ -1,9 +1,7 @@
-import React, { useState } from "react";
-import { Button, Icon, Input, NavigationHeader, Screen, Text } from "../../core";
+import React from "react";
+import { Button,  Input,   Text } from "../../core";
 import s from "./style";
-import { Image, Modal, View } from "react-native";
-import logo from "../../../assets/images/header_logo.png";
-import { border, borderColor } from "../../resources";
+import {  Modal, View } from "react-native";
 
 export const DeleteMyAccount = ({ modalVisibility,setModalVisibility }) => {
 

@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import {Image, StatusBar, View} from "react-native";
 import {Button, Icon, NavigationHeader, Screen, Text} from "../../core";
-import logo from "../../../assets/images/header_logo.png";
 import s from "./style";
 import {Colors, margin} from "../../resources";
 import example from '../../../assets/images/ex_lesson.png'

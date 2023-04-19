@@ -3,5 +3,6 @@ module.exports = {
         "./assets/images",
         "./assets/fonts",
         "./assets/icons",
+        "./assets/android",
     ],
 };

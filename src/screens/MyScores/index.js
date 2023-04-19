@@ -1,8 +1,6 @@
 import React from "react";
-import { Button, NavigationHeader, PageViewer, Screen, Text } from "../../core";
-import s from "../History/style";
-import { Image, ScrollView, View } from "react-native";
-import logo from "../../../assets/images/header_logo.png";
+import { Text } from "../../core";
+import {  ScrollView } from "react-native";
 import { Colors } from "../../resources";
 import AnimatedHeader from "react-native-animated-header";
 

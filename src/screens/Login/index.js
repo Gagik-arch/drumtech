@@ -19,7 +19,6 @@ export const Login = ({navigation}) => {
             <Input placeholder={"Email"} validationKey={"email"}/>
             <Input placeholder={"Password"} validationKey={"password"} secureTextEntry={true}
                    containerStyles={s.input}/>
-
             <Button label={"Forgot password ?"}
                     textSize={"14_400"}
                     onPress={() => {
@@ -28,12 +27,16 @@ export const Login = ({navigation}) => {
             />
             <Button variant={"primary"} label={"Sign in"} style={s.submit_btn}
                     onPress={() => {
-                        navigation.navigate("OTPverification");
+                        navigation.navigate("TabsNavigator");
                     }}/>
 
             <View style={s.footer_container}>
                 <Text> Don’t have an account ?</Text>
-                <Button label={" Sign up now"} textSize={"14_400"}/>
+                <Button label={" Sign up now"} textSize={"14_400"}
+                        onPress={() => {
+                            navigation.navigate('Registration')
+                        }}
+                />
             </View>
         </Screen>
     );
