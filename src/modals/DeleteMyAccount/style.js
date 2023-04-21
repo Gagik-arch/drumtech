@@ -34,10 +34,14 @@ const s = StyleSheet.create({
   btn: {
     flex: 1,
     ...padding(10),
+    backgroundColor:'transparent',
   },
-  delete_btn: {
+  delete_btn:{
     borderColor: "rgba(0, 0, 0, 0.15)",
     ...border(0, 0, 0, 1),
+  },
+  delete_btn_text: {
+
     color: Colors.red,
   },
 });

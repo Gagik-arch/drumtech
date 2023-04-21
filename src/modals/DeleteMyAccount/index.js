@@ -23,8 +23,8 @@ export const DeleteMyAccount = ({ modalVisibility,setModalVisibility }) => {
             />
             <Button label={"Delete"}
                     textSize={"17_600"}
-                    style={[s.btn]}
-                    textStyle={s.delete_btn}
+                    style={[s.btn,s.delete_btn]}
+                    textStyle={s.delete_btn_text}
             />
           </View>
         </View>

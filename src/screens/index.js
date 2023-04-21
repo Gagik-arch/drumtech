@@ -8,3 +8,4 @@ export * from './ForgotPassword';
 export * from './ResetPassword';
 export * from './MyDetails';
 export * from './ChangePassword';
+export * from './Exercise';

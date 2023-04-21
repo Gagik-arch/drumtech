@@ -6,7 +6,8 @@ import frame from '../../../assets/images/frame.png'
 
 export const ExerciseModal = ({
                                   modalVisibility,
-                                  setModalVisibility
+                                  setModalVisibility,
+                                  navigation
                               }) => {
     return <Modal animationType="fade"
                   visible={modalVisibility}
@@ -30,7 +31,12 @@ export const ExerciseModal = ({
                     <Text size={'16_500'} style={s.line}>4. Record once you think you’ve got it
                         down!</Text>
                 </View>
-                <Button variant={'primary'} label={'Next'}/>
+                <Button variant={'primary'} label={'Next'}
+                        onPress={() => {
+                            navigation.navigate('Exercise')
+                            setModalVisibility(false)
+                        }}
+                />
             </View>
         </View>
     </Modal>

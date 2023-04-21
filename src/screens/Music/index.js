@@ -25,7 +25,9 @@ export const Music = (props) => {
                 {renderBlock({onPress: onPressList})}
             </View>
             <ExerciseModal modalVisibility={modalVisibility}
-                           setModalVisibility={setModalVisibility}/>
+                           setModalVisibility={setModalVisibility}
+                           navigation={props.navigation}
+            />
         </Screen>
     );
 };

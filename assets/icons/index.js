@@ -6,6 +6,11 @@ import ChevronLeft from './chevron-left.svg';
 import Score from './score.svg';
 import Music from './music.svg';
 import User from './user.svg';
+import Metronome from './metronome.svg';
+import Play from './play.svg';
+import Rapid from './rapid.svg';
+import Record from './record.svg';
+import Stop from './stop.svg';
 
 export {
   EyeOff,
@@ -16,4 +21,9 @@ export {
   Music,
   User,
   ChevronLeft,
+  Play,
+  Rapid,
+  Record,
+  Stop,
+  Metronome,
 };

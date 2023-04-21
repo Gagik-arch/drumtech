@@ -1,7 +1,7 @@
 import {
   Login, OTPverification, Registration,
-     ForgotPassword, ResetPassword, MyDetails,
-  ChangePassword,
+  ForgotPassword, ResetPassword, MyDetails,
+  ChangePassword, Exercise,
 } from "../screens";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { useNavigation } from "@react-navigation/native";
@@ -68,6 +68,11 @@ const StackNavigator = () => {
         <Stack.Screen
           name={"Change Password"}
           component={ChangePassword}
+          options={{ header: () => null }}
+        />
+        <Stack.Screen
+          name={"Exercise"}
+          component={Exercise}
           options={{ header: () => null }}
         />
       </Stack.Group>

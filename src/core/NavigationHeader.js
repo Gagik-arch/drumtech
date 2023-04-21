@@ -1,7 +1,7 @@
 import React from "react";
 import { View, StyleSheet, TouchableOpacity, StatusBar } from "react-native";
 import { Icon, Text } from "./index";
-import { padding, Colors } from "../resources";
+import {padding, Colors, border} from "../resources";
 
 const NavigationHeader = ({
                             backHandler = false,
@@ -21,7 +21,7 @@ const NavigationHeader = ({
             backAction ? backAction(e) : props.navigation.goBack()
           }>
           <Icon type={"ChevronLeft"}  />
-          <Text style={'17_400'}>Back</Text>
+          <Text size={'17_400'}>Back</Text>
         </TouchableOpacity>
       ) : null}
 
@@ -47,6 +47,8 @@ const s = StyleSheet.create({
     justifyContent: "space-between",
     position: "relative",
     ...padding(16),
+      ...border(0,0,1,0),
+      borderColor:'rgb(179,179,179)'
   },
   title_container: {
     flexDirection: "row",
