@@ -28,6 +28,7 @@ const s = StyleSheet.create({
         ...padding(16),
     },
     list: {
+        borderWidth:1,
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
@@ -51,7 +52,7 @@ const s = StyleSheet.create({
     },
     image: {
         flex: 1,
-        // ...padding(10)
+        ...padding(10)
     }
 });
 

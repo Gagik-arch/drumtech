@@ -10,11 +10,11 @@ export const ExerciseModal = ({
                                   navigation
                               }) => {
     return <Modal animationType="fade"
-                  visible={modalVisibility}
+                  visible={modalVisibility !== ''}
     >
         <View style={s.container}>
             <View style={s.top}>
-                <Button onPress={() => setModalVisibility(false)}>
+                <Button onPress={() => setModalVisibility('')}>
                     <Icon type={'ChevronLeft'}/>
                     <Text>Back</Text>
                 </Button>
@@ -33,8 +33,8 @@ export const ExerciseModal = ({
                 </View>
                 <Button variant={'primary'} label={'Next'}
                         onPress={() => {
-                            navigation.navigate('Exercise')
-                            setModalVisibility(false)
+                            navigation.navigate('Exercise',{title:modalVisibility})
+                            setModalVisibility('')
                         }}
                 />
             </View>

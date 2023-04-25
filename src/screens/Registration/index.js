@@ -1,6 +1,6 @@
-import { useState, useRef, useCallback, useMemo, useLayoutEffect } from "react";
-import { Button, Screen, Icon, Text, Input } from "../../core";
-import s from "../Login/style";
+import { useState } from "react";
+import { Button, Screen,  Text, Input } from "../../core";
+import s from "./style";
 import {Image, View} from "react-native";
 import logo from "../../../assets/images/logo.png";
 import {margin} from "../../resources";
@@ -11,7 +11,7 @@ export const Registration = ({ route, navigation }) => {
   const [isLoading, setIsLoading] = useState(false);
 
   return (
-      <Screen contentContainerStyle={s.container}>
+      <Screen style={s.container}>
         <View style={s.top}>
           <Image source={logo}/>
           <Text size={"24_600"} style={{...margin(24, 0)}}>Welcome to drumtech</Text>

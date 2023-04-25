@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   KeyboardAvoidingView,
   Platform,
@@ -6,31 +6,31 @@ import {
   StatusBar,
   StyleSheet,
   View,
-} from 'react-native';
-import {SafeAreaView} from 'react-native-safe-area-context';
-import {padding} from '../resources';
+} from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { padding } from "../resources";
 
 const Screen = ({
-  children,
-  style = {},
-  contentContainerStyle = {},
-  edges = ['top', 'left', 'right'],
-  header = <></>,
-  footer = <></>,
-  scrollDisable = false,
-  backgroundColor = 'white',
-}) => {
+                  children,
+                  style = {},
+                  contentContainerStyle = {},
+                  edges = ["top", "left", "right"],
+                  header = <></>,
+                  footer = <></>,
+                  scrollDisable = false,
+                  backgroundColor = "white",
+                }) => {
   return (
     <KeyboardAvoidingView
       style={[
         {
-          height: '100%',
+          height: "100%",
         },
       ]}
-      behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
       enabled={false}
       keyboardVerticalOffset={
-        Platform.OS === 'ios' ? 'padding' : StatusBar.height + 20
+        Platform.OS === "ios" ? "padding" : StatusBar.height + 20
       }>
       {header}
       <SafeAreaView
@@ -53,12 +53,13 @@ const Screen = ({
           ) : (
             <ScrollView
               contentProps={{
-                keyboardDismissMode: 'interactive',
+                keyboardDismissMode: "interactive",
                 keyboardShouldPersistTaps: false,
               }}
               contentContainerStyle={[contentContainerStyle, {
-                flexGrow: 1,justifyContent:'flex-start',
-                alignItems:'flex-start'
+                flexGrow: 1,
+                justifyContent: "flex-start",
+                alignItems: "flex-start",
               }]}
             >
               {children}
@@ -74,7 +75,7 @@ const Screen = ({
 const s = StyleSheet.create({
   container: {
     flex: 1,
-    height: '100%',
+    height: "100%",
   },
 });
 

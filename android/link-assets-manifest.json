@@ -2,8 +2,16 @@
   "migIndex": 1,
   "data": [
     {
-      "path": "assets/images/ex_lesson.png",
-      "sha1": "7513889c01fcd6f6b9d14ccd947c96bef5786fe4"
+      "path": "assets/images/accent_tap.png",
+      "sha1": "1d281e3210c607811ac11872d4c91657d49c7712"
+    },
+    {
+      "path": "assets/images/double_beats.png",
+      "sha1": "063b35879f5155e902101c6c89980d5bc4a00a4e"
+    },
+    {
+      "path": "assets/images/eights.png",
+      "sha1": "5500c911cf150b435bb14fcc11f937c13b225e07"
     },
     {
       "path": "assets/images/frame.png",
@@ -12,6 +20,10 @@
     {
       "path": "assets/images/logo.png",
       "sha1": "d42209d0024fac9a756dc930952699190ae5e149"
+    },
+    {
+      "path": "assets/images/triplet_drag.png",
+      "sha1": "97d684a7e5efd9c98228ffdce99b9c1fe4015a01"
     },
     {
       "path": "assets/fonts/Inter/Inter-Black.ttf",
@@ -43,7 +55,7 @@
     },
     {
       "path": "assets/icons/arrow-left.svg",
-      "sha1": "603858a4ca9664dc0f66c961038ab645abc20172"
+      "sha1": "ba95896f3f0f34e7cef9e97493986632d638f022"
     },
     {
       "path": "assets/icons/chevron-left.svg",
@@ -51,7 +63,7 @@
     },
     {
       "path": "assets/icons/chevron-right.svg",
-      "sha1": "77c63445e7ccb944f33181b467321353e44fc9b0"
+      "sha1": "8994299c5ac33ada2d05958cadd16c67e46d566c"
     },
     {
       "path": "assets/icons/eye-off.svg",
@@ -63,23 +75,55 @@
     },
     {
       "path": "assets/icons/index.js",
-      "sha1": "41f96045302e0da64c2a62aeedb037d66970beb7"
+      "sha1": "6569c3c6c24f70b91a00acd5c9cc1657f6e8bce6"
+    },
+    {
+      "path": "assets/icons/metronome.svg",
+      "sha1": "a9787e00011e5503091da53a19dabbd77ce1408e"
+    },
+    {
+      "path": "assets/icons/music-active.svg",
+      "sha1": "8774bc667af16901f89259ad0c12b1bfaf4fda37"
     },
     {
       "path": "assets/icons/music.svg",
-      "sha1": "32c7f39070888fe0b4021d7763655d4d837d52b7"
+      "sha1": "ae0ee3229bb2a1c1adf4f780214791cf3b18e4c9"
+    },
+    {
+      "path": "assets/icons/play.svg",
+      "sha1": "eab58a577fa064f760cc79ba8ef85cc0d0c85f46"
+    },
+    {
+      "path": "assets/icons/rapid.svg",
+      "sha1": "0a691fc874bfee2f1f95080ff0e3d8132cf822e5"
+    },
+    {
+      "path": "assets/icons/record.svg",
+      "sha1": "844283aef72591c83b0458959438792a6b3c3014"
+    },
+    {
+      "path": "assets/icons/score-active.svg",
+      "sha1": "33fdc7c7aca98923cea159e79a76f045236877ad"
     },
     {
       "path": "assets/icons/score.svg",
-      "sha1": "63e95a39c08a5298abf9fbad5ce1abea545719a4"
+      "sha1": "b31320b12d9efebd5841657e6517ac78a070739e"
+    },
+    {
+      "path": "assets/icons/settings-active.svg",
+      "sha1": "074a8e055f96d2b5188a4ad910a195e1fbf21cb9"
     },
     {
       "path": "assets/icons/settings.svg",
-      "sha1": "628087e06ff7cf62bdf4e4a2862e961f14b1aecb"
+      "sha1": "1f07aff5c49e31da4ea85a2a5fe7d5c38ee0d84e"
+    },
+    {
+      "path": "assets/icons/stop.svg",
+      "sha1": "4a327f4568db774d9982c10bd557bab3808078e1"
     },
     {
       "path": "assets/icons/user.svg",
-      "sha1": "5cc6d9eda9ff349c374b282250a52d56959f25d9"
+      "sha1": "abed1a2b2513a7c38f8dd1a0356dbcb5d1e658fa"
     },
     {
       "path": "assets/android/drawable-hdpi/launch_screen.jpg",

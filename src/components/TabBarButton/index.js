@@ -17,7 +17,7 @@ export const TabBarButton = ({
   return (
     <TouchableOpacity
       style={[s.container, {
-        ...padding(6, 0 ,26,0 ),
+        ...padding(6, 0, 26, 0),
       }]}
       accessibilityRole={accessibilityRole}
       accessibilityState={accessibilityState}
@@ -25,11 +25,10 @@ export const TabBarButton = ({
       onPress={e => onPress(e)}
       onLongPress={onLongPress}>
       <Icon
-        type={icon}
+        type={icon + (selected ? "Active" : "")}
         size={28}
-        fill={'red'}
       />
-      <Text style={[s.label]} size={'12_400'}>
+      <Text style={[s.label, { color: selected ? "white" : "#ADADAD" }]} size={"12_400"}>
         {label.charAt(0).toUpperCase() + label.slice(1)}
       </Text>
     </TouchableOpacity>

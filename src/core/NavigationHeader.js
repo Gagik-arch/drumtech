@@ -14,16 +14,18 @@ const NavigationHeader = ({
   return (
     <View style={[s.container, style]}>
       <StatusBar backgroundColor={Colors.yellow} barStyle="light-content" />
-      {backHandler ? (
-        <TouchableOpacity
-          style={s.back_btn}
-          onPress={e =>
-            backAction ? backAction(e) : props.navigation.goBack()
-          }>
-          <Icon type={"ChevronLeft"}  />
-          <Text size={'17_400'}>Back</Text>
-        </TouchableOpacity>
-      ) : null}
+   <View style={{flex:1}}>
+     {backHandler ? (
+       <TouchableOpacity
+         style={s.back_btn}
+         onPress={e =>
+           backAction ? backAction(e) : props.navigation.goBack()
+         }>
+         <Icon type={"ChevronLeft"}  />
+         <Text size={'17_400'}>Back</Text>
+       </TouchableOpacity>
+     ) : null}
+   </View>
 
       <View style={s.title_container}>
         {title || (
@@ -54,7 +56,7 @@ const s = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
-    flex: 1,
+    flex: 2,
     zIndex: -1,
   },
   title: {
@@ -65,10 +67,11 @@ const s = StyleSheet.create({
   buttons: {
     flexDirection: "row",
     justifyContent: "flex-end",
+    flex:1
   },
   back_btn:{
     flexDirection:'row',
-    alignItems:'center'
+    alignItems:'center',
   }
 });
 export default NavigationHeader;
