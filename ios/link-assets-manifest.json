@@ -75,7 +75,7 @@
     },
     {
       "path": "assets/icons/index.js",
-      "sha1": "6569c3c6c24f70b91a00acd5c9cc1657f6e8bce6"
+      "sha1": "6dbbcb7a0a4c032dfdeff71f212d0ef7354ac48a"
     },
     {
       "path": "assets/icons/metronome.svg",
@@ -88,6 +88,10 @@
     {
       "path": "assets/icons/music.svg",
       "sha1": "ae0ee3229bb2a1c1adf4f780214791cf3b18e4c9"
+    },
+    {
+      "path": "assets/icons/pause.svg",
+      "sha1": "48c730b5980747c4830863ca48c4f1b7aaa1834c"
     },
     {
       "path": "assets/icons/play.svg",

@@ -13,9 +13,6 @@ import { ExerciseModal } from "../../modals";
 export const Music = (props) => {
   const [modalVisibility, setModalVisibility] = useState('');
 
-  useEffect(()=>{
-  },[])
-
   const onPressList = (type) => {
     setModalVisibility(type);
   };
